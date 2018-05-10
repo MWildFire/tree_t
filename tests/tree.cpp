@@ -13,9 +13,9 @@ TEST_CASE ("insert")
         "--------10/n"
         "----8/n"
         "--------7/n"
-    }
+    };
     std::ostringstream ostream;
-    tree print(ostream);
+    tree.print(ostream);
     REQUIRE (ostream.str() == output);
 }
 
@@ -34,9 +34,9 @@ TEST_CASE ("print")
         "----15/n"
         "--------10/n"
         "------------8/n"
-    }
+    };
     std::ostringstream ostream;
-    tree print(ostream);
+    tree.print(ostream);
     REQUIRE (ostream.str() == output);
 }
 
@@ -55,9 +55,9 @@ TEST_CASE ("remove")
         "------------9.1/n"
         "----8.3/n"
         "--------7.4/n"
-    }
+    };
     std::ostringstream ostream;
-    tree print(ostream);
+    tree.print(ostream);
     REQUIRE (ostream.str() == output);
 }
 
@@ -85,8 +85,8 @@ TEST_CASE ("initializer list")
         "----10/n"
         "------------6/n"
         "--------5/n"
-    }
+    };
     std::ostringstream ostream;
-    tree print(ostream);
+    tree.print(ostream);
     REQUIRE (ostream.str() == output);
 }
