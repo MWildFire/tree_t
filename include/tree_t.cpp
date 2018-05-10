@@ -256,16 +256,11 @@ public:
     
     auto operator==(tree_t const & other)
     {
-        if (root_ == nullptr && other.root_ == nullptr)
-        {
-            return true;
-        }
-        if (root_ == nullptr || other.root_ == nullptr)
-        {
-            return false;
-        }
-        
-        return *(root_ == other.root_);
+	    if (root_ == nullptr && other.root_ == nullptr)
+		    return true;
+	    if (root_ == nullptr || other.root_ == nullptr) 
+		    return false;
+        return *(root_) == *(other.root_);
     }
     
     tree_t()
