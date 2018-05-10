@@ -34,12 +34,13 @@ private:
         {
             if (key > value)
             {
-                if (left == nullptr)
+		if (left == nullptr)
                 {
                     left = new node_t();
                     left->key = value;
                 }
                 else left->addingkey(value);
+
             }
             else if (right == nullptr)
             {
@@ -76,16 +77,16 @@ private:
         
         void print_tree(std::ostream & stream, T line = 0)
         {
-            if (left != nullptr)
+            if (right != nullptr)
             {
-                left->print_tree(stream, line + 4);
+                right->print_tree(stream, line + 4);
             }
             for (int i = 0; i < line + 4; i ++)
                 stream << '-';
             stream << key << std::endl;
-            if (right)
+            if (left != nullptr)
             {
-                right-> print_tree(stream, line +4);
+                left-> print_tree(stream, line +4);
             }
         }
         
