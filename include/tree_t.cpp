@@ -39,14 +39,14 @@ private:
                     left = new node_t();
                     left->key = value;
                 }
-                else left->addingelem(value);
+                else left->addingkey(value);
             }
             else if (right == nullptr)
             {
                 right = new node_t();
                 right->key = value;
             }
-            else right->addingelem(value);
+            else right->addingkey(value);
             return;
         }
         
