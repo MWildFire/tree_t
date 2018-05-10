@@ -72,7 +72,6 @@ private:
                 }
                 else return false;
             }
-            return NULL;
         }
         
         void print_tree(std::ostream & stream, T line = 0)
