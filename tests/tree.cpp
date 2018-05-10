@@ -1,6 +1,6 @@
 #include <catch.hpp>
 #include <sstream>
-#include "tree_t.hpp"
+#include "tree_t.cpp"
 
 TEST_CASE ("insert")
 {
