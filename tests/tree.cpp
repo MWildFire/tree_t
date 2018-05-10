@@ -27,7 +27,7 @@ TEST_CASE ("print")
     tree.insert(10);
     tree.insert(8);
     tree.insert(16);
-    std::string output;
+    std::string output
     {
         "--------18\n"
         "------------16\n"
@@ -49,7 +49,7 @@ TEST_CASE ("remove")
     tree.insert(9.1);
     tree.insert (12.2);
     REQUIRE (tree.remove(10.5) == true);
-    std::string output;
+    std::string output
     {
         "--------12.2\n"
         "------------9.1\n"
