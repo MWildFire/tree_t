@@ -267,6 +267,11 @@ public:
         
         return *(root_ == other.root_);
     }
+    
+    tree_t()
+    {
+        root_ = nullptr;
+    }
 };
 
 
