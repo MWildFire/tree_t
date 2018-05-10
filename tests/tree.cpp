@@ -10,9 +10,9 @@ TEST_CASE ("insert")
     tree.insert(7);
     std::string output
     {
-        "--------10/n"
-        "----8/n"
-        "--------7/n"
+        "--------10\n"
+        "----8\n"
+        "--------7\n"
     };
     std::ostringstream ostream;
     tree.print(ostream);
@@ -29,11 +29,12 @@ TEST_CASE ("print")
     tree.insert(16);
     std::string output;
     {
-        "--------18/n"
-        "------------16/n"
-        "----15/n"
-        "--------10/n"
-        "------------8/n"};
+        "--------18\n"
+        "------------16\n"
+        "----15\n"
+        "--------10\n"
+        "------------8\n"
+    };
     std::ostringstream ostream;
     tree.print(ostream);
     REQUIRE (ostream.str() == output);
@@ -50,10 +51,11 @@ TEST_CASE ("remove")
     REQUIRE (tree.remove(10.5) == true);
     std::string output;
     {
-        "--------12.2/n"
-        "------------9.1/n"
-        "----8.3/n"
-        "--------7.4/n"};
+        "--------12.2\n"
+        "------------9.1\n"
+        "----8.3\n"
+        "--------7.4\n"
+    };
     std::ostringstream ostream;
     tree.print(ostream);
     REQUIRE (ostream.str() == output);
@@ -79,10 +81,10 @@ TEST_CASE ("initializer list")
     tree_t<int> tree {10, 20, 5, 6};
     std::string output
     {
-        "--------20/n"
-        "----10/n"
-        "------------6/n"
-        "--------5/n"};
+        "--------20\n"
+        "----10\n"
+        "------------6\n"
+        "--------5\n"};
     std::ostringstream ostream;
     tree.print(ostream);
     REQUIRE (ostream.str() == output);
