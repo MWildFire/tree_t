@@ -21,7 +21,7 @@ TEST_CASE ("insert")
 
 TEST_CASE ("print")
 {
-    tree<int> tree;
+    tree_t<int> tree;
     tree.insert(15);
     tree.insert(18);
     tree.insert(10);
@@ -63,7 +63,7 @@ TEST_CASE ("remove")
 
 TEST_CASE ("comparasion")
 {
-    tree<int> tree1, tree2;
+    tree_t<int> tree1, tree2;
     
     tree1.insert(8);
     tree1.insert(10);
